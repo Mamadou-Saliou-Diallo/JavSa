@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nombre Vérificateur</title>
+    <script>
+        function verifierNombre() {
+            let nombre = prompt("Veuillez entrer un nombre:");
+            nombre = parseInt(nombre);
+
+            if (isNaN(nombre)) {
+                alert("Ce n'est pas un nombre valide.");
+            } else {
+                if (nombre > 20) {
+                    alert("Le nombre est trop grand.");
+                } else if (nombre < 20) {
+                    alert("Le nombre est trop petit.");
+                } else {
+                    alert("Le nombre est bon.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Vérificateur de Nombre</h1>
+    <button onclick="verifierNombre()">Vérifier un nombre</button>
+</body>
+</html>
